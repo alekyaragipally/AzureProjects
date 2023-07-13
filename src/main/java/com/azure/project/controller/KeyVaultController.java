@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/keyvault")
+@RequestMapping("/keyVault")
 public class KeyVaultController {
 
     private final SecretClient secretClient;
@@ -18,6 +18,11 @@ public class KeyVaultController {
     @GetMapping("/getSecrets")
     public String getSecrets(){
         return secretClient.getSecret("keyVaultId").getValue();
+    }
+
+    @GetMapping("/test")
+    public String test(){
+        return "Hello, I'm deployed using Azure cloud";
     }
 
 }
