@@ -11,7 +11,7 @@
 	<groupId>com.azure</groupId>
 	<artifactId>project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>project</name>
 	<description>Azure Projects</description>
 	<properties>
